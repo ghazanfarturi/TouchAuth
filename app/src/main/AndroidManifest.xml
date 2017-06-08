@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.unikl.hci.abbas.touchauth">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- <uses-permission android:name="android.permission.SET_DEBUG_APP" /> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".demo.MainMenuActivity"
+            android:noHistory="true"> <!-- .demo.MainActivity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".demo.NegativeFeatureActivity" />
+        <!-- <activity android:name=".demo.Main2Activity" /> -->
+        <!-- <activity android:name=".widget.ProgressWheel.TestProgressWheel" /> -->
+        <!-- <activity android:name=".widget.ImageView.TestImageLoading"></activity> -->
+        <!-- <activity android:name=".demo.MainMenuActivity"></activity> -->
+        <activity android:name=".demo.AddNewUserActivity" />
+        <activity android:name=".demo.TrainModelActivity" />
+        <activity android:name=".demo.DemoActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".demo.TestAuthActivity"
+            android:noHistory="true">
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+        <activity android:name=".demo.WelcomeActivity" />
+        <activity android:name=".demo.FailedActivity"></activity>
+    </application>
+
+</manifest>
